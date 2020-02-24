@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+   workingFolder must be an absolute path
+-->
+<pipelines id="" workSpace="c:\pipelines">
+   <!-- id  must be unique; runas can be process or thread
+      priority level if applicable -->
+   <pipeline id="PipeName1" runas="process" priority="1" confPath="">
+      <environment>
+         <!-- sets working folder for the pipeline all tmp files and object go in here
+            if not set pipeline rootFolder will be set to pipelines.workSpace + pipeline id -->
+         <rootFolder path="c:\pipelines\PipeName1Folder" />
+         <rootBinLibFolder path="" />
+         <cpuCores ids="[1,2,3]" />
+         <!-- if atrb confPath is not there or is empty 
+            then element can be filled -->
+         <engine binpath="" confPath="">
+            <!-- enter conf data here -->
+         </engine>
+         <logger binpath="" confPath="" />
+         <perfCounters binpath="" confPath="" />
+      </environment>
+      <workUnits>
+         <workUnit uid="" seq="0" binPath="" confPath=""/>
+      </workUnits>
+   </pipeline>
+   <!-- -->
+   <pipeline name="" id="" path="">
+      <environment>
+         <rootFolder path="" />
+         <rootBinLibFolder path="" />
+         <cores ids="[1,2,3]"/>
+         <perfCounters binpath="">
+         </perfCounters>
+      </environment>
+      <workUnits>
+         <workUnit uid="" seq="0" binPath="" confPath=""/>
+      </workUnits>
+   </pipeline>
+</pipelines>
