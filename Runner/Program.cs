@@ -1,6 +1,6 @@
 ﻿
 using System;
-using sc = SAASP.Core;
+using __SAASP = SAASP.Core;
 
 
 namespace Runner
@@ -9,10 +9,10 @@ namespace Runner
    {
       static void Main(string[] args)
       {
-         sc.Starter starter = new sc.Starter();
+         __SAASP.Starter starter = new __SAASP.Starter();
          starter.LoadPipes();
 
          Console.WriteLine("Hello World!");
       }
-   }
+   }  B
 }

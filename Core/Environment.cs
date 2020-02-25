@@ -12,9 +12,16 @@ namespace SAASP.Core
 
       public Environment()
       {
+         /* load dlls */
+
       }
 
       public ILogger Logger
+      {
+         get { return null; }
+      }
+
+      public IPerfCounters PerfCounters
       {
          get { return null; }
       }
